@@ -9,7 +9,7 @@ public class SimpleBloomFilter implements SimpleFilter {
 
 	private static Logger log = Logger.getLogger(SimpleBloomFilter.class);	
 	
-	private static final int DEFAULT_SIZE = 2 << 24;
+	private static final int DEFAULT_SIZE = 2 << 27;
 	private static final int[] seeds = new int[] { 7, 11, 13, 31, 37, 61, };
 	
 	private static long CUR_SIZE = 0;
